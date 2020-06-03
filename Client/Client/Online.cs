@@ -30,7 +30,7 @@ namespace Client
             {
                 case ChartElementType.DataPoint:
                     var dataPoint = e.HitTestResult.Series.Points[e.HitTestResult.PointIndex];
-                    e.Text = string.Format("Date:\t{0}\nVolts:\t{1}", DateTime.FromOADate(dataPoint.XValue), dataPoint.YValues[0]);
+                    e.Text = string.Format("Date:\t{0}\nVolts:\t{1}", DateTime.FromOADate(dataPoint.XValue).ToString("HH:mm:ss"), dataPoint.YValues[0]);
                     break;
             }
         }
@@ -71,8 +71,7 @@ namespace Client
                 a = double.Parse(getValue(7), CultureInfo.InvariantCulture);
             }
             chart1.Series[0].Points.AddXY(DateTime.Now, a);
-            chart1.Series[0].Points.AddY(a);
-            chart1.ChartAreas[0].AxisX.ScaleView.Position = chart1.Series[0].Points.Count - 5;
+            chart1.ChartAreas[0].AxisX.ScaleView.Position = chart1.Series[0].Points.Count - 6;
         }
        
         private string getValue(int ch)
@@ -92,10 +91,7 @@ namespace Client
             DateTime time = DateTime.Now;
             timer1.Interval = 1000;
             chart1.GetToolTipText += chart1_GetToolTipText;
-            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-            chart1.ChartAreas[0].AxisX.ScaleView.Size = 6;
-            chart1.ChartAreas[0].AxisX.ScrollBar.IsPositionedInside = true;
-            chart1.ChartAreas[0].AxisX.ScrollBar.Enabled = true;
+            
         }
 
         private void Get_Click(object sender, EventArgs e)
@@ -142,6 +138,18 @@ namespace Client
             chart1.Series[0].BorderWidth = 5;
             chart1.Series[0].IsXValueIndexed = true;
             chart1.Series[0].XValueType = ChartValueType.Time;
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+            chart1.ChartAreas[0].AxisX.ScaleView.Size = 6;
+            chart1.ChartAreas[0].AxisX.ScrollBar.IsPositionedInside = true;
+            chart1.ChartAreas[0].AxisX.ScrollBar.Enabled = true;
+            chart1.ChartAreas[0].AxisY.ScaleView.ZoomReset();
+            chart1.ChartAreas[0].AxisY.ScrollBar.Enabled = true;
+            chart1.ChartAreas[0].CursorY.IsUserEnabled = true;
+            chart1.ChartAreas[0].AxisY.ScrollBar.IsPositionedInside = true;
+            chart1.ChartAreas[0].CursorY.IsUserSelectionEnabled = true;
+            chart1.ChartAreas[0].CursorY.AutoScroll = true;
+            chart1.ChartAreas[0].AxisX.ScaleView.SmallScrollMinSize = 60;
+            chart1.ChartAreas[0].AxisY.ScaleView.SmallScrollMinSize = 0.1;
             timer1.Start();
         }
 
