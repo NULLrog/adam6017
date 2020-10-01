@@ -3,6 +3,7 @@ The purpose of this repo is to design a complex of applications for collecting a
 Repo include:
 - Server based on the operating system (OS) Linux (Ubuntu 20.04);
 - Client based on Windows OS (Windows 10).
+
 The following libraries are used in the Server application: libmodbus, libmysqlclient.
 The Server was written in C, which allows the use of interprocess communication (IPC) methods. The Linux-integrated tool, System V, was chosen as the IPC communication tool. To build, use the Make tool.
 Mysql was chosen as the data warehouse.
