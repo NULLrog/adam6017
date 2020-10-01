@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.con = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,7 +91,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.maskedTextBox1);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.con);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 60);
             this.panel3.Name = "panel3";
@@ -105,15 +105,15 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(200, 30);
             this.maskedTextBox1.TabIndex = 2;
             // 
-            // button1
+            // con
             // 
-            this.button1.Location = new System.Drawing.Point(91, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 30);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Connect";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.con.Location = new System.Drawing.Point(91, 223);
+            this.con.Name = "con";
+            this.con.Size = new System.Drawing.Size(200, 30);
+            this.con.TabIndex = 1;
+            this.con.Text = "Connect";
+            this.con.UseVisualStyleBackColor = true;
+            this.con.Click += new System.EventHandler(this.con_Click);
             // 
             // Connect
             // 
@@ -146,7 +146,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button con;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

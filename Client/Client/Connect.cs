@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Net;
@@ -25,15 +19,13 @@ namespace Client
 
         private void Connect_Load(object sender, EventArgs e)
         {
-            maskedTextBox1.PromptChar = ' ';
-            maskedTextBox1.Text = "192.168.31.164";
-            //maskedTextBox1.Text = "   .   .   .   ";
-            //maskedTextBox1.Mask = "009.009.009.900";
+            maskedTextBox1.Text = "   .   .   .   ";
+            maskedTextBox1.Mask = "009.009.009.900";
             maskedTextBox1.ResetOnSpace = false;
             maskedTextBox1.SkipLiterals = false;
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void con_Click(object sender, EventArgs e)
         {
             data = new byte[256];
             TcpClient t = new TcpClient(AddressFamily.InterNetwork);
@@ -45,7 +37,7 @@ namespace Client
             }
             catch
             {
-                MessageBox.Show("Подключение недоступно! Повторите попытку позже!");
+                MessageBox.Show("Connection Error! Please try again!");
                 return;
             }
             stream = t.GetStream();
@@ -59,11 +51,6 @@ namespace Client
             m.message = message;
             m.Show();
             this.Hide();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

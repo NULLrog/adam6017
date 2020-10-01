@@ -32,7 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.dateBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.getAll = new System.Windows.Forms.Button();
             this.get7 = new System.Windows.Forms.Button();
@@ -43,14 +43,14 @@
             this.get2 = new System.Windows.Forms.Button();
             this.get1 = new System.Windows.Forms.Button();
             this.get0 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ch7Box = new System.Windows.Forms.TextBox();
+            this.ch6Box = new System.Windows.Forms.TextBox();
+            this.ch5Box = new System.Windows.Forms.TextBox();
+            this.ch4Box = new System.Windows.Forms.TextBox();
+            this.ch3Box = new System.Windows.Forms.TextBox();
+            this.ch2Box = new System.Windows.Forms.TextBox();
+            this.ch1Box = new System.Windows.Forms.TextBox();
+            this.ch0Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,12 +61,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.select = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.channelListBox = new System.Windows.Forms.CheckedListBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
@@ -76,7 +76,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.dateBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.getAll);
             this.panel1.Controls.Add(this.get7);
@@ -87,14 +87,14 @@
             this.panel1.Controls.Add(this.get2);
             this.panel1.Controls.Add(this.get1);
             this.panel1.Controls.Add(this.get0);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.ch7Box);
+            this.panel1.Controls.Add(this.ch6Box);
+            this.panel1.Controls.Add(this.ch5Box);
+            this.panel1.Controls.Add(this.ch4Box);
+            this.panel1.Controls.Add(this.ch3Box);
+            this.panel1.Controls.Add(this.ch2Box);
+            this.panel1.Controls.Add(this.ch1Box);
+            this.panel1.Controls.Add(this.ch0Box);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -108,15 +108,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(377, 582);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // textBox9
+            // dateBox
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(83, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(167, 30);
-            this.textBox9.TabIndex = 78;
+            this.dateBox.Enabled = false;
+            this.dateBox.Location = new System.Drawing.Point(83, 43);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(167, 30);
+            this.dateBox.TabIndex = 78;
             // 
             // label1
             // 
@@ -226,69 +225,69 @@
             this.get0.UseVisualStyleBackColor = true;
             this.get0.Click += new System.EventHandler(this.Get0_Click);
             // 
-            // textBox8
+            // ch7Box
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(83, 428);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(167, 30);
-            this.textBox8.TabIndex = 67;
+            this.ch7Box.Enabled = false;
+            this.ch7Box.Location = new System.Drawing.Point(83, 428);
+            this.ch7Box.Name = "ch7Box";
+            this.ch7Box.Size = new System.Drawing.Size(167, 30);
+            this.ch7Box.TabIndex = 67;
             // 
-            // textBox7
+            // ch6Box
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(83, 376);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 30);
-            this.textBox7.TabIndex = 66;
+            this.ch6Box.Enabled = false;
+            this.ch6Box.Location = new System.Drawing.Point(83, 376);
+            this.ch6Box.Name = "ch6Box";
+            this.ch6Box.Size = new System.Drawing.Size(167, 30);
+            this.ch6Box.TabIndex = 66;
             // 
-            // textBox6
+            // ch5Box
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(83, 319);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 30);
-            this.textBox6.TabIndex = 65;
+            this.ch5Box.Enabled = false;
+            this.ch5Box.Location = new System.Drawing.Point(83, 319);
+            this.ch5Box.Name = "ch5Box";
+            this.ch5Box.Size = new System.Drawing.Size(167, 30);
+            this.ch5Box.TabIndex = 65;
             // 
-            // textBox5
+            // ch4Box
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(83, 269);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 30);
-            this.textBox5.TabIndex = 64;
+            this.ch4Box.Enabled = false;
+            this.ch4Box.Location = new System.Drawing.Point(83, 269);
+            this.ch4Box.Name = "ch4Box";
+            this.ch4Box.Size = new System.Drawing.Size(167, 30);
+            this.ch4Box.TabIndex = 64;
             // 
-            // textBox4
+            // ch3Box
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(83, 225);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 30);
-            this.textBox4.TabIndex = 63;
+            this.ch3Box.Enabled = false;
+            this.ch3Box.Location = new System.Drawing.Point(83, 225);
+            this.ch3Box.Name = "ch3Box";
+            this.ch3Box.Size = new System.Drawing.Size(167, 30);
+            this.ch3Box.TabIndex = 63;
             // 
-            // textBox3
+            // ch2Box
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(83, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 30);
-            this.textBox3.TabIndex = 62;
+            this.ch2Box.Enabled = false;
+            this.ch2Box.Location = new System.Drawing.Point(83, 182);
+            this.ch2Box.Name = "ch2Box";
+            this.ch2Box.Size = new System.Drawing.Size(167, 30);
+            this.ch2Box.TabIndex = 62;
             // 
-            // textBox2
+            // ch1Box
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(83, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 30);
-            this.textBox2.TabIndex = 61;
+            this.ch1Box.Enabled = false;
+            this.ch1Box.Location = new System.Drawing.Point(83, 135);
+            this.ch1Box.Name = "ch1Box";
+            this.ch1Box.Size = new System.Drawing.Size(167, 30);
+            this.ch1Box.TabIndex = 61;
             // 
-            // textBox1
+            // ch0Box
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(83, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 30);
-            this.textBox1.TabIndex = 60;
+            this.ch0Box.Enabled = false;
+            this.ch0Box.Location = new System.Drawing.Point(83, 86);
+            this.ch0Box.Name = "ch0Box";
+            this.ch0Box.Size = new System.Drawing.Size(167, 30);
+            this.ch0Box.TabIndex = 60;
             // 
             // label9
             // 
@@ -365,12 +364,12 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.select);
-            this.panel2.Controls.Add(this.checkedListBox1);
+            this.panel2.Controls.Add(this.channelListBox);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.dateTimePickerTo);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dateTimePickerFrom);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(377, 0);
             this.panel2.Name = "panel2";
@@ -387,10 +386,10 @@
             this.select.UseVisualStyleBackColor = true;
             this.select.Click += new System.EventHandler(this.Select_Click);
             // 
-            // checkedListBox1
+            // channelListBox
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.channelListBox.FormattingEnabled = true;
+            this.channelListBox.Items.AddRange(new object[] {
             "Ch0",
             "Ch1",
             "Ch2",
@@ -399,11 +398,11 @@
             "Ch5",
             "Ch6",
             "Ch7"});
-            this.checkedListBox1.Location = new System.Drawing.Point(65, 39);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox1.Size = new System.Drawing.Size(98, 79);
-            this.checkedListBox1.TabIndex = 3;
+            this.channelListBox.Location = new System.Drawing.Point(77, 39);
+            this.channelListBox.Name = "channelListBox";
+            this.channelListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.channelListBox.Size = new System.Drawing.Size(98, 79);
+            this.channelListBox.TabIndex = 3;
             // 
             // label13
             // 
@@ -414,13 +413,13 @@
             this.label13.TabIndex = 60;
             this.label13.Text = "To";
             // 
-            // dateTimePicker2
+            // dateTimePickerTo
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(480, 39);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker2.TabIndex = 59;
+            this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerTo.Location = new System.Drawing.Point(480, 39);
+            this.dateTimePickerTo.Name = "dateTimePickerTo";
+            this.dateTimePickerTo.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePickerTo.TabIndex = 59;
             // 
             // label12
             // 
@@ -440,13 +439,13 @@
             this.label11.TabIndex = 57;
             this.label11.Text = "Ch:";
             // 
-            // dateTimePicker1
+            // dateTimePickerFrom
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(232, 39);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker1.TabIndex = 56;
+            this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(232, 39);
+            this.dateTimePickerFrom.Name = "dateTimePickerFrom";
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePickerFrom.TabIndex = 56;
             // 
             // chart1
             // 
@@ -506,7 +505,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox dateBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button getAll;
         private System.Windows.Forms.Button get7;
@@ -517,14 +516,14 @@
         private System.Windows.Forms.Button get2;
         private System.Windows.Forms.Button get1;
         private System.Windows.Forms.Button get0;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ch7Box;
+        private System.Windows.Forms.TextBox ch6Box;
+        private System.Windows.Forms.TextBox ch5Box;
+        private System.Windows.Forms.TextBox ch4Box;
+        private System.Windows.Forms.TextBox ch3Box;
+        private System.Windows.Forms.TextBox ch2Box;
+        private System.Windows.Forms.TextBox ch1Box;
+        private System.Windows.Forms.TextBox ch0Box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -536,11 +535,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button select;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
+        private System.Windows.Forms.CheckedListBox channelListBox;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }

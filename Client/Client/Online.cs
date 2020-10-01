@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 using System.Globalization;
 using System.Windows.Forms.DataVisualization.Charting;
-using Timer = System.Windows.Forms.Timer;
 
 namespace Client
 {
@@ -38,31 +29,31 @@ namespace Client
         private void Graphic()
         {
             double a;
-            if (radioButton1.Checked == true)
+            if (ch0.Checked == true)
             {
                a = double.Parse(getValue(0), CultureInfo.InvariantCulture);
             }
-            if (radioButton2.Checked == true)
+            if (ch2.Checked == true)
             {
                 a = double.Parse(getValue(1), CultureInfo.InvariantCulture);
             }
-            if (radioButton3.Checked == true)
+            if (ch1.Checked == true)
             {
                 a = double.Parse(getValue(2), CultureInfo.InvariantCulture);
             }
-            if (radioButton4.Checked == true)
+            if (ch3.Checked == true)
             {
                 a = double.Parse(getValue(3), CultureInfo.InvariantCulture);
             }
-            if (radioButton5.Checked == true)
+            if (ch4.Checked == true)
             {
                 a = double.Parse(getValue(4), CultureInfo.InvariantCulture);
             }
-            if (radioButton6.Checked == true)
+            if (ch5.Checked == true)
             {
                 a = double.Parse(getValue(5), CultureInfo.InvariantCulture);
             }
-            if (radioButton7.Checked == true)
+            if (ch6.Checked == true)
             {
                 a = double.Parse(getValue(6), CultureInfo.InvariantCulture);
             }
@@ -87,45 +78,49 @@ namespace Client
 
         private void Online_Load(object sender, EventArgs e)
         {
-            button1.Enabled = false;
+            stop.Enabled = false;
             DateTime time = DateTime.Now;
             timer1.Interval = 1000;
             chart1.GetToolTipText += chart1_GetToolTipText;
-            
         }
 
-        private void Get_Click(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            Graphic();
+        }
+
+        private void start_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
-            button1.Enabled = true;
-            get.Enabled = false;
-            groupBox1.Enabled = false;
+            stop.Enabled = true;
+            start.Enabled = false;
+            channelsBox.Enabled = false;
             Series mySeriesOfPoint;
-            if (radioButton1.Checked == true)
+            if (ch0.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-0");
             }
-            if (radioButton2.Checked == true)
+            else if (ch1.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-1");
             }
-            if (radioButton3.Checked == true)
+            else if (ch2.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-2");
             }
-            if (radioButton4.Checked == true)
+            else if (ch3.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-3");
             }
-            if (radioButton5.Checked == true)
+            else if (ch4.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-4");
             }
-            if (radioButton6.Checked == true)
+            else if (ch5.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-5");
             }
-            if (radioButton7.Checked == true)
+            else if (ch6.Checked == true)
             {
                 mySeriesOfPoint = new Series("Ch-6");
             }
@@ -153,17 +148,12 @@ namespace Client
             timer1.Start();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void stop_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            button1.Enabled = false;
-            get.Enabled = true;
-            groupBox1.Enabled = true; 
-        }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            Graphic();
+            stop.Enabled = false;
+            start.Enabled = true;
+            channelsBox.Enabled = true;
         }
     }
 }

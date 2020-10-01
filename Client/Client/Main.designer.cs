@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.online = new System.Windows.Forms.Button();
             this.db = new System.Windows.Forms.Button();
@@ -38,11 +37,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.header = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -67,14 +65,13 @@
             this.online.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.online.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.online.ForeColor = System.Drawing.Color.Transparent;
-            this.online.Image = global::Client.Properties.Resources.test21;
             this.online.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.online.Location = new System.Drawing.Point(0, 292);
             this.online.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.online.Name = "online";
             this.online.Size = new System.Drawing.Size(181, 100);
             this.online.TabIndex = 3;
-            this.online.Text = "Online";
+            this.online.Text = "˃ Online";
             this.online.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.online.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.online.UseVisualStyleBackColor = true;
@@ -88,14 +85,13 @@
             this.db.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.db.ForeColor = System.Drawing.Color.Transparent;
-            this.db.Image = global::Client.Properties.Resources.test21;
             this.db.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.db.Location = new System.Drawing.Point(0, 192);
             this.db.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.db.Name = "db";
             this.db.Size = new System.Drawing.Size(181, 100);
             this.db.TabIndex = 2;
-            this.db.Text = "Database";
+            this.db.Text = "˃ Database";
             this.db.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.db.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.db.UseVisualStyleBackColor = true;
@@ -109,14 +105,13 @@
             this.lastVal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lastVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lastVal.ForeColor = System.Drawing.Color.Transparent;
-            this.lastVal.Image = global::Client.Properties.Resources.test21;
             this.lastVal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lastVal.Location = new System.Drawing.Point(0, 92);
             this.lastVal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lastVal.Name = "lastVal";
             this.lastVal.Size = new System.Drawing.Size(181, 100);
             this.lastVal.TabIndex = 1;
-            this.lastVal.Text = "Last value";
+            this.lastVal.Text = "˃ Last value";
             this.lastVal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lastVal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.lastVal.UseVisualStyleBackColor = true;
@@ -157,46 +152,24 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(181, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1201, 661);
             this.panel2.TabIndex = 2;
             // 
-            // chart1
+            // label1
             // 
-            this.chart1.BackColor = System.Drawing.SystemColors.Control;
-            this.chart1.BorderlineColor = System.Drawing.SystemColors.Control;
-            this.chart1.BorderSkin.PageColor = System.Drawing.SystemColors.Control;
-            chartArea1.AxisX.Interval = 10D;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.LabelAutoFitMaxFontSize = 12;
-            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea1.AxisY.LabelAutoFitMaxFontSize = 12;
-            chartArea1.AxisY.Maximum = 12D;
-            chartArea1.AxisY.Minimum = -12D;
-            chartArea1.BackColor = System.Drawing.SystemColors.Control;
-            chartArea1.CursorX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea1.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Alignment = System.Drawing.StringAlignment.Center;
-            legend1.BackColor = System.Drawing.SystemColors.Control;
-            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            legend1.IsTextAutoFit = false;
-            legend1.ItemColumnSpacing = 30;
-            legend1.MaximumAutoSize = 40F;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(1201, 661);
-            this.chart1.TabIndex = 82;
-            this.chart1.Text = "chart1";
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1201, 455);
+            this.label1.TabIndex = 84;
+            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Main
             // 
@@ -212,11 +185,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADAM-6017";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
-            this.Load += new System.EventHandler(this.Main_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,7 +202,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

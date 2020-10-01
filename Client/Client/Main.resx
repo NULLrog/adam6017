@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Welcome to the client application for interaction with the Adam-6017 Server operating under the Modbus protocol.
+To read data from individual channels of the Adam-6017 device or all at once, use the menu item on the left Last Value.
+To read the latest data from the Database, as well as to analyze and upload the history of voltage changes from individual channels of the Adam-6017 device or all at once, use the menu item on the left of the Database.
+To receive data from individual channels of the Adam-6017 in real time, use the menu item on the left of Online.
+
+
+Enjoy using the app!</value>
+  </data>
 </root>

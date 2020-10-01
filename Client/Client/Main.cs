@@ -25,11 +25,6 @@ namespace Client
             InitializeComponent();
         }
 
-        private void Main_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (header.Text == childForm.Text)

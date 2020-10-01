@@ -29,76 +29,165 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            this.get = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            this.start = new System.Windows.Forms.Button();
+            this.channelsBox = new System.Windows.Forms.GroupBox();
+            this.ch7 = new System.Windows.Forms.RadioButton();
+            this.ch6 = new System.Windows.Forms.RadioButton();
+            this.ch5 = new System.Windows.Forms.RadioButton();
+            this.ch4 = new System.Windows.Forms.RadioButton();
+            this.ch3 = new System.Windows.Forms.RadioButton();
+            this.ch1 = new System.Windows.Forms.RadioButton();
+            this.ch2 = new System.Windows.Forms.RadioButton();
+            this.ch0 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.channelsBox.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
-            // get
+            // start
             // 
-            this.get.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.get.Location = new System.Drawing.Point(699, 53);
-            this.get.Name = "get";
-            this.get.Size = new System.Drawing.Size(102, 30);
-            this.get.TabIndex = 78;
-            this.get.Text = "Start";
-            this.get.UseVisualStyleBackColor = true;
-            this.get.Click += new System.EventHandler(this.Get_Click);
+            this.start.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start.Location = new System.Drawing.Point(699, 53);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(102, 30);
+            this.start.TabIndex = 78;
+            this.start.Text = "Start";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
-            // groupBox1
+            // channelsBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton8);
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(681, 71);
-            this.groupBox1.TabIndex = 79;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Chanel:";
+            this.channelsBox.Controls.Add(this.ch7);
+            this.channelsBox.Controls.Add(this.ch6);
+            this.channelsBox.Controls.Add(this.ch5);
+            this.channelsBox.Controls.Add(this.ch4);
+            this.channelsBox.Controls.Add(this.ch3);
+            this.channelsBox.Controls.Add(this.ch1);
+            this.channelsBox.Controls.Add(this.ch2);
+            this.channelsBox.Controls.Add(this.ch0);
+            this.channelsBox.Location = new System.Drawing.Point(12, 12);
+            this.channelsBox.Name = "channelsBox";
+            this.channelsBox.Size = new System.Drawing.Size(681, 71);
+            this.channelsBox.TabIndex = 79;
+            this.channelsBox.TabStop = false;
+            this.channelsBox.Text = "Chanel:";
+            // 
+            // ch7
+            // 
+            this.ch7.AutoSize = true;
+            this.ch7.Location = new System.Drawing.Point(587, 36);
+            this.ch7.Name = "ch7";
+            this.ch7.Size = new System.Drawing.Size(77, 29);
+            this.ch7.TabIndex = 14;
+            this.ch7.TabStop = true;
+            this.ch7.Text = "Ch-7";
+            this.ch7.UseVisualStyleBackColor = true;
+            // 
+            // ch6
+            // 
+            this.ch6.AutoSize = true;
+            this.ch6.Location = new System.Drawing.Point(504, 36);
+            this.ch6.Name = "ch6";
+            this.ch6.Size = new System.Drawing.Size(77, 29);
+            this.ch6.TabIndex = 13;
+            this.ch6.TabStop = true;
+            this.ch6.Text = "Ch-6";
+            this.ch6.UseVisualStyleBackColor = true;
+            // 
+            // ch5
+            // 
+            this.ch5.AutoSize = true;
+            this.ch5.Location = new System.Drawing.Point(421, 36);
+            this.ch5.Name = "ch5";
+            this.ch5.Size = new System.Drawing.Size(77, 29);
+            this.ch5.TabIndex = 12;
+            this.ch5.TabStop = true;
+            this.ch5.Text = "Ch-5";
+            this.ch5.UseVisualStyleBackColor = true;
+            // 
+            // ch4
+            // 
+            this.ch4.AutoSize = true;
+            this.ch4.Location = new System.Drawing.Point(338, 36);
+            this.ch4.Name = "ch4";
+            this.ch4.Size = new System.Drawing.Size(77, 29);
+            this.ch4.TabIndex = 11;
+            this.ch4.TabStop = true;
+            this.ch4.Text = "Ch-4";
+            this.ch4.UseVisualStyleBackColor = true;
+            // 
+            // ch3
+            // 
+            this.ch3.AutoSize = true;
+            this.ch3.Location = new System.Drawing.Point(255, 36);
+            this.ch3.Name = "ch3";
+            this.ch3.Size = new System.Drawing.Size(77, 29);
+            this.ch3.TabIndex = 10;
+            this.ch3.TabStop = true;
+            this.ch3.Text = "Ch-3";
+            this.ch3.UseVisualStyleBackColor = true;
+            // 
+            // ch1
+            // 
+            this.ch1.AutoSize = true;
+            this.ch1.Location = new System.Drawing.Point(89, 36);
+            this.ch1.Name = "ch1";
+            this.ch1.Size = new System.Drawing.Size(77, 29);
+            this.ch1.TabIndex = 9;
+            this.ch1.TabStop = true;
+            this.ch1.Text = "Ch-1";
+            this.ch1.UseVisualStyleBackColor = true;
+            // 
+            // ch2
+            // 
+            this.ch2.AutoSize = true;
+            this.ch2.Location = new System.Drawing.Point(172, 36);
+            this.ch2.Name = "ch2";
+            this.ch2.Size = new System.Drawing.Size(77, 29);
+            this.ch2.TabIndex = 9;
+            this.ch2.TabStop = true;
+            this.ch2.Text = "Ch-2";
+            this.ch2.UseVisualStyleBackColor = true;
+            // 
+            // ch0
+            // 
+            this.ch0.AutoSize = true;
+            this.ch0.Checked = true;
+            this.ch0.Location = new System.Drawing.Point(6, 36);
+            this.ch0.Name = "ch0";
+            this.ch0.Size = new System.Drawing.Size(77, 29);
+            this.ch0.TabIndex = 8;
+            this.ch0.TabStop = true;
+            this.ch0.Text = "Ch-0";
+            this.ch0.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.get);
+            this.panel1.Controls.Add(this.stop);
+            this.panel1.Controls.Add(this.channelsBox);
+            this.panel1.Controls.Add(this.start);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1183, 100);
             this.panel1.TabIndex = 80;
             // 
-            // button1
+            // stop
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(807, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 30);
-            this.button1.TabIndex = 80;
-            this.button1.Text = "Stop";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.stop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stop.Location = new System.Drawing.Point(807, 53);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(102, 30);
+            this.stop.TabIndex = 80;
+            this.stop.Text = "Stop";
+            this.stop.UseVisualStyleBackColor = true;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
             // timer1
             // 
@@ -110,122 +199,33 @@
             this.chart1.BackColor = System.Drawing.SystemColors.Control;
             this.chart1.BorderlineColor = System.Drawing.SystemColors.Control;
             this.chart1.BorderSkin.PageColor = System.Drawing.SystemColors.Control;
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.LabelAutoFitMaxFontSize = 12;
-            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            chartArea2.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea2.AxisY.LabelAutoFitMaxFontSize = 12;
-            chartArea2.AxisY.Maximum = 12D;
-            chartArea2.AxisY.Minimum = -12D;
-            chartArea2.BackColor = System.Drawing.SystemColors.Control;
-            chartArea2.CursorX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea2.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelAutoFitMaxFontSize = 12;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisY.LabelAutoFitMaxFontSize = 12;
+            chartArea1.AxisY.Maximum = 12D;
+            chartArea1.AxisY.Minimum = -12D;
+            chartArea1.BackColor = System.Drawing.SystemColors.Control;
+            chartArea1.CursorX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Alignment = System.Drawing.StringAlignment.Center;
-            legend2.BackColor = System.Drawing.SystemColors.Control;
-            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            legend2.IsTextAutoFit = false;
-            legend2.ItemColumnSpacing = 30;
-            legend2.MaximumAutoSize = 40F;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend1.Alignment = System.Drawing.StringAlignment.Center;
+            legend1.BackColor = System.Drawing.SystemColors.Control;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            legend1.IsTextAutoFit = false;
+            legend1.ItemColumnSpacing = 30;
+            legend1.MaximumAutoSize = 40F;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 100);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(1183, 514);
             this.chart1.TabIndex = 81;
             this.chart1.Text = "chart1";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 29);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ch-0";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(172, 36);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 29);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ch-2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(89, 36);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(77, 29);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Ch-1";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(255, 36);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(77, 29);
-            this.radioButton4.TabIndex = 10;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Ch-3";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(338, 36);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(77, 29);
-            this.radioButton5.TabIndex = 11;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Ch-4";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(421, 36);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(77, 29);
-            this.radioButton6.TabIndex = 12;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Ch-5";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(504, 36);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(77, 29);
-            this.radioButton7.TabIndex = 13;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Ch-6";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(587, 36);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(77, 29);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Ch-7";
-            this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // Online
             // 
@@ -239,8 +239,8 @@
             this.Name = "Online";
             this.Text = "Online";
             this.Load += new System.EventHandler(this.Online_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.channelsBox.ResumeLayout(false);
+            this.channelsBox.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
@@ -249,19 +249,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button get;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button start;
+        private System.Windows.Forms.GroupBox channelsBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton ch7;
+        private System.Windows.Forms.RadioButton ch6;
+        private System.Windows.Forms.RadioButton ch5;
+        private System.Windows.Forms.RadioButton ch4;
+        private System.Windows.Forms.RadioButton ch3;
+        private System.Windows.Forms.RadioButton ch1;
+        private System.Windows.Forms.RadioButton ch2;
+        private System.Windows.Forms.RadioButton ch0;
     }
 }

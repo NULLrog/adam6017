@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.getAll = new System.Windows.Forms.Button();
             this.get7 = new System.Windows.Forms.Button();
             this.get6 = new System.Windows.Forms.Button();
@@ -38,14 +40,14 @@
             this.get2 = new System.Windows.Forms.Button();
             this.get1 = new System.Windows.Forms.Button();
             this.get0 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ch7Box = new System.Windows.Forms.TextBox();
+            this.ch6Box = new System.Windows.Forms.TextBox();
+            this.ch5Box = new System.Windows.Forms.TextBox();
+            this.ch4Box = new System.Windows.Forms.TextBox();
+            this.ch3Box = new System.Windows.Forms.TextBox();
+            this.ch2Box = new System.Windows.Forms.TextBox();
+            this.ch1Box = new System.Windows.Forms.TextBox();
+            this.ch0Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,14 +56,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.dateBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.getAll);
             this.panel1.Controls.Add(this.get7);
@@ -72,14 +72,14 @@
             this.panel1.Controls.Add(this.get2);
             this.panel1.Controls.Add(this.get1);
             this.panel1.Controls.Add(this.get0);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.ch7Box);
+            this.panel1.Controls.Add(this.ch6Box);
+            this.panel1.Controls.Add(this.ch5Box);
+            this.panel1.Controls.Add(this.ch4Box);
+            this.panel1.Controls.Add(this.ch3Box);
+            this.panel1.Controls.Add(this.ch2Box);
+            this.panel1.Controls.Add(this.ch1Box);
+            this.panel1.Controls.Add(this.ch0Box);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -93,6 +93,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(377, 549);
             this.panel1.TabIndex = 0;
+            // 
+            // dateBox
+            // 
+            this.dateBox.Enabled = false;
+            this.dateBox.Location = new System.Drawing.Point(83, 43);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(167, 30);
+            this.dateBox.TabIndex = 78;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Date:";
             // 
             // getAll
             // 
@@ -193,69 +210,69 @@
             this.get0.UseVisualStyleBackColor = true;
             this.get0.Click += new System.EventHandler(this.Get0_Click);
             // 
-            // textBox8
+            // ch7Box
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(83, 428);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(167, 30);
-            this.textBox8.TabIndex = 67;
+            this.ch7Box.Enabled = false;
+            this.ch7Box.Location = new System.Drawing.Point(83, 428);
+            this.ch7Box.Name = "ch7Box";
+            this.ch7Box.Size = new System.Drawing.Size(167, 30);
+            this.ch7Box.TabIndex = 67;
             // 
-            // textBox7
+            // ch6Box
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(83, 376);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 30);
-            this.textBox7.TabIndex = 66;
+            this.ch6Box.Enabled = false;
+            this.ch6Box.Location = new System.Drawing.Point(83, 376);
+            this.ch6Box.Name = "ch6Box";
+            this.ch6Box.Size = new System.Drawing.Size(167, 30);
+            this.ch6Box.TabIndex = 66;
             // 
-            // textBox6
+            // ch5Box
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(83, 319);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 30);
-            this.textBox6.TabIndex = 65;
+            this.ch5Box.Enabled = false;
+            this.ch5Box.Location = new System.Drawing.Point(83, 319);
+            this.ch5Box.Name = "ch5Box";
+            this.ch5Box.Size = new System.Drawing.Size(167, 30);
+            this.ch5Box.TabIndex = 65;
             // 
-            // textBox5
+            // ch4Box
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(83, 269);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 30);
-            this.textBox5.TabIndex = 64;
+            this.ch4Box.Enabled = false;
+            this.ch4Box.Location = new System.Drawing.Point(83, 269);
+            this.ch4Box.Name = "ch4Box";
+            this.ch4Box.Size = new System.Drawing.Size(167, 30);
+            this.ch4Box.TabIndex = 64;
             // 
-            // textBox4
+            // ch3Box
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(83, 225);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 30);
-            this.textBox4.TabIndex = 63;
+            this.ch3Box.Enabled = false;
+            this.ch3Box.Location = new System.Drawing.Point(83, 225);
+            this.ch3Box.Name = "ch3Box";
+            this.ch3Box.Size = new System.Drawing.Size(167, 30);
+            this.ch3Box.TabIndex = 63;
             // 
-            // textBox3
+            // ch2Box
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(83, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 30);
-            this.textBox3.TabIndex = 62;
+            this.ch2Box.Enabled = false;
+            this.ch2Box.Location = new System.Drawing.Point(83, 182);
+            this.ch2Box.Name = "ch2Box";
+            this.ch2Box.Size = new System.Drawing.Size(167, 30);
+            this.ch2Box.TabIndex = 62;
             // 
-            // textBox2
+            // ch1Box
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(83, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 30);
-            this.textBox2.TabIndex = 61;
+            this.ch1Box.Enabled = false;
+            this.ch1Box.Location = new System.Drawing.Point(83, 135);
+            this.ch1Box.Name = "ch1Box";
+            this.ch1Box.Size = new System.Drawing.Size(167, 30);
+            this.ch1Box.TabIndex = 61;
             // 
-            // textBox1
+            // ch0Box
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(83, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 30);
-            this.textBox1.TabIndex = 60;
+            this.ch0Box.Enabled = false;
+            this.ch0Box.Location = new System.Drawing.Point(83, 86);
+            this.ch0Box.Name = "ch0Box";
+            this.ch0Box.Size = new System.Drawing.Size(167, 30);
+            this.ch0Box.TabIndex = 60;
             // 
             // label9
             // 
@@ -329,23 +346,6 @@
             this.label2.TabIndex = 52;
             this.label2.Text = "Ch0:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "Date:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(83, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(167, 30);
-            this.textBox9.TabIndex = 78;
-            // 
             // LastVal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -375,14 +375,14 @@
         private System.Windows.Forms.Button get2;
         private System.Windows.Forms.Button get1;
         private System.Windows.Forms.Button get0;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ch7Box;
+        private System.Windows.Forms.TextBox ch6Box;
+        private System.Windows.Forms.TextBox ch5Box;
+        private System.Windows.Forms.TextBox ch4Box;
+        private System.Windows.Forms.TextBox ch3Box;
+        private System.Windows.Forms.TextBox ch2Box;
+        private System.Windows.Forms.TextBox ch1Box;
+        private System.Windows.Forms.TextBox ch0Box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -391,7 +391,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox dateBox;
         private System.Windows.Forms.Label label1;
     }
 }
